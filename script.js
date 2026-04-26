@@ -37,13 +37,6 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".reveal").forEach((item) => observer.observe(item));
 
-document.querySelectorAll("form").forEach((form) => {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    alert("Form preview only. Replace with your live submission link when ready.");
-  });
-});
-
 const slideTabs = document.querySelectorAll("[data-slide-target]");
 const slidePanels = document.querySelectorAll("[data-slide]");
 
